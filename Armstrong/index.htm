@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function isArmstrongNumber(number) {
+  const numStr = number.toString();
+  const numDigits = numStr.length;
+  let sum = 0;
+
+  for (let i = 0; i < numDigits; i++) {
+    sum += Math.pow(parseInt(numStr[i]), numDigits);
+  }
+
+  return sum === number;
+}
+console.log(isArmstrongNumber(153));   // true
+console.log(isArmstrongNumber(9474));  // true
+console.log(isArmstrongNumber(9475));  // false
+
+    </script>
+</body>
+</html>

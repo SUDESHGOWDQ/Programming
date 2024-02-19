@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       var sum = 0
+       let num = prompt("Enter a number")
+       for(let i=1;i<=num;i++){
+        if (num%i==0) {
+            console.log(i);
+            var sum = sum+i
+        }
+       }
+       console.log(`The total factor sum is ${sum}`);
+    </script>
+</body>
+</html>
